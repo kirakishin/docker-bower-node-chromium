@@ -6,7 +6,8 @@ RUN apt-get update && \
     chromium \
     libgconf-2-4 \
     openjdk-8-jre-headless && \
-    npm -g bower \
+    npm i -g bower \
+    npm i -g @angular/cli \
     && rm -rf /var/lib/apt/lists/*
 
 USER node
