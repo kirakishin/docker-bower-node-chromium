@@ -8,8 +8,9 @@ RUN apt-get update && \
     openjdk-8-jre-headless && \
     npm i -g bower \
     npm i -g @angular/cli \
+    npm i -g grunt \
     && rm -rf /var/lib/apt/lists/*
 
-USER node
+USER root
 
 ENV CHROME_BIN /usr/bin/chromium
