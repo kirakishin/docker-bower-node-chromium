@@ -4,6 +4,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND="noninteractive" \
     apt-get install -y --no-install-recommends \
     chromium \
+    ruby-full \
     libgconf-2-4 \
     openjdk-8-jre-headless && \
     npm i -g bower \
